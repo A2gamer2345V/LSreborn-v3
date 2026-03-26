@@ -1,0 +1,95 @@
+name: LSReborn
+version: '${project.version}'
+main: com.A2plugin.lsreborn.LSReborn
+api-version: '1.19'
+author: A2gamer
+description: Lightweight & customizable LifeSteal SMP plugin!
+
+softdepend:
+    - PlaceholderAPI
+    - WorldGuard
+    - floodgate
+
+commands:
+    lsreborn:
+        aliases:
+            - lsr
+        description: lsreborn admin commands
+        permission-message: §cYou don't have permission to use this command!
+    eliminate:
+        permission: lsreborn.admin.eliminate
+        description: eliminate a player
+        permission-message: §cYou don't have permission to use this command!
+    revive:
+        permission: lsreborn.admin.revive
+        description: revive a player
+        permission-message: §cYou don't have permission to use this command!
+    withdrawheart:
+        permission: lsreborn.withdraw
+        description: withdraw a heart
+        permission-message: §cYou don't have permission to use this command!
+    hearts:
+        permission: lsreborn.viewhearts
+        description: view other players max hearts
+        permission-message: §cYou don't have permission to use this command!
+
+permissions:
+    lsreborn.managedata:
+        description: permission to manage data
+        default: op
+    lsreborn.admin.reload:
+        description: permission to reload plugin
+        default: op
+    lsreborn.admin.setlife:
+        description: set a players hearts
+        default: op
+    lsreborn.admin.giveitem:
+        description: give custom items to player
+        default: op
+    lsreborn.admin.eliminate:
+        description: eliminate a player
+        default: op
+    lsreborn.admin.revive:
+        description: revive a player
+        default: op
+    lsreborn.admin.graceperiod:
+        description: manage players grace period
+        default: op
+    lsreborn.admin.debug:
+        description: access debug commands
+        default: op
+    lsreborn.bypassrevivelimit:
+        description: bypass the player revive limit
+        default: op
+    lsreborn.withdraw:
+        description: withdraw a heart
+        default: true
+    lsreborn.revive:
+        description: allow to revive player
+        default: true
+    lsreborn.viewrecipes:
+        description: allows to view recipes
+        default: true
+    lsreborn.help:
+        description: allows to see help page
+        default: true
+    lsreborn.viewhearts:
+        description: allows to view other players max hearts
+        default: true
+    lsreborn.maxhearts:
+        description: set the max hearts
+    lsreborn.bypass:
+        description: Prevents heart loss, drops, and killer rewards on death
+        default: false
+    lsreborn.admin.bypasscheck:
+        description: Check other players' and your own bypass status
+        default: op
+    lsreborn.admin.set:
+        description: can set players' hearts
+        default: op
+    lsreborn.admin.take:
+        description: can take players' hearts
+        default: op
+    lsreborn.admin.resethearts:
+        description: resets' all players hearts
+        default: op
